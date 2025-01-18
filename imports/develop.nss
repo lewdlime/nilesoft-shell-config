@@ -3,8 +3,12 @@
 	menu(mode="single" title='editors' image=\uE17A)
 	{
 		item(title='Visual Studio Code' image=[\uE272, #22A7F2] cmd='code' args='"@sel.path"')
+		//separator
+		//item(type='file' mode="single" title='Windows notepad' image cmd='@sys.bin\notepad.exe' args='"@sel.path"')
 		separator
-		item(type='file' mode="single" title='Windows notepad' image cmd='@sys.bin\notepad.exe' args='"@sel.path"')
+		item(title='Sublime Text' image cmd='sublime_text.exe' args='"@sel.path"')
+		separator
+		item(type='file' mode="multi_unique" find='.blend|.vrm|.vrma|.usd*|.vroid|.dae|.abc|.svg|.obj|.ply|.stl|.bvh|.fbx|.glb|.gltf' title='Blender' image cmd='C:\Program Files\Blender Foundation\Blender 4.3\blender.exe' args='"@sel.path"')
 	}
 
 	menu(mode="multiple" title='dotnet' image=\uE143)
